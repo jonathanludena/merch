@@ -1,5 +1,5 @@
 import React, { useRef, useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import AppContext from "../context/AppContext";
 
@@ -7,6 +7,7 @@ import "../styles/components/Information.css";
 
 const Information = () => {
   const form = useRef(null);
+  const history = useHistory();
 
   const { state, addToBuyer } = useContext(AppContext);
   const { cart } = state;
@@ -26,6 +27,7 @@ const Information = () => {
     };
 
     addToBuyer(buyer);
+    history.push("/checkout/payment");
   };
 
   return (
