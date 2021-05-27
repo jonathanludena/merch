@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className="Header">
       <h1 className="Header-title">
-        <Link to="/">PlatziConf Merch</Link>
+        <Link to="/">Merch2021</Link>
       </h1>
       <div className="Header-checkout">
         <Link to="/checkout">
