@@ -38,4 +38,11 @@
    - Creamos el App.jsx en la carpeta routes 
    - Creamos los componentes de la app en containers
    - Configuramos publicPatch en output y hitoryApiFallback: true en webpack.config.js para que webpack pueda compilar las rutas de react-router-dom
-   
+
+
+## Integracion de React Helmet para mejorar el SEO con meta etiquetas
+
+1. Instalar react-helmet
+   - npm install react-helmet --save
+   Con React Helmet podremos importar en el home e integrar la metadata que va a tener que mostrarse entre secciones de la app
+2. 
